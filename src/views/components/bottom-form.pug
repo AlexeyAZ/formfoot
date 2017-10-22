@@ -1,0 +1,22 @@
+div#bottomFormContainer.bottom-form-container
+    p.text_s.ta-center.semibold.bottom-form__title.
+        Проверьте, есть ли ваш город<br> 
+        в списке подходящих и свободных<br> 
+        для открытия?
+    form(data-next="#bigForm")#bottomForm.bottom-form
+        label.bottom-form__label
+            input(type="text" name="city" placeholder="Ваш город" required).input
+        label.bottom-form__label
+            input(type="email" name="email" placeholder="E-mail" required).input
+        label.bottom-form__label
+            input(type="text" name="phone" placeholder="Телефон" required).input
+        +btn-round({size: "xl", color: "red", type: "btn"}).bottom-form__btn.
+            Проверить город
+        div.form__security
+            input(type="checkbox" id="bfs" checked required).form__security-input
+            label(for="bfs").form__security-label
+                span.form__security-icon
+                span.form__security-text.
+                    Нажимая кнопку «Проверить город» я даю согласие 
+                    на обработку персональных данных и соглашаюсь 
+                    с <a class="form__security-link" target="_blank" href="doc/politic.pdf">политикой конфиденциальности</a>

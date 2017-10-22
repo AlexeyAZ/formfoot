@@ -1,0 +1,109 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    @include media(w1024) {
+        font-size: 60px;
+    }
+
+    @include media(w768) {
+        font-size: 30px;
+    }
+
+    // @include media(w500) {
+    //     font-size: 6vw;
+    // }
+}
+
+h2 {
+    font-size: 55px;
+
+    @include media (w1280) {
+        font-size: 40px;
+    }
+
+    @include media(w1024) {
+        font-size: 30px;
+    }
+
+    @include media(w768) {
+        font-size: 25px;
+    }
+}
+
+.text {
+
+    &_xs {
+        font-size: 18px;
+
+        @include media(w1024) {
+            
+        }
+    }
+
+    &_s {
+        font-size: 25px;
+
+        @include media(w1024) {
+            font-size: 20px;
+        }
+
+        @include media(w768) {
+            font-size: 15px;
+        }
+    }
+
+    &_m {
+        font-size: 28px;
+
+        @include media(w1024) {
+            //font-size: 25px;
+        }
+    }
+    
+    &_l {
+        font-size: 30px;
+
+        @include media(w1024) {
+            font-size: 25px;
+        }
+
+        @include media(w768) {
+            font-size: 20px;
+        }
+    }
+    
+    &_xl {
+        font-size: 35px;
+
+        @include media(w1280) {
+            font-size: 30px;
+        }
+
+        @include media(w1024) {
+            font-size: 25px;
+        }
+
+        @include media(w768) {
+            font-size: 18px;
+        }
+    }
+    
+    &_xxl {
+        font-size: 40px;
+
+        @include media(w1024) {
+            font-size: 30px;
+        }
+
+        @include media(w768) {
+            font-size: 25px;
+        }
+    }
+}

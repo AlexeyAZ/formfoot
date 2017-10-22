@@ -1,0 +1,45 @@
+.sec8 {
+	background-image: url("../img/sec8-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	padding-top: 8vw;
+	padding-bottom: 8vw;
+
+	&__content {
+		display: flex;
+
+		@include media(w1024) {
+			display: block;
+			text-align: center;
+		}
+
+		@include media(w768) {
+			
+			br {
+				display: none;
+			}
+		}
+	}
+
+	&__content-item {
+		
+		&_text {
+			flex-shrink: 0;
+			padding-top: 6vw;
+			width: 54%;
+
+			@include media(w1024) {
+				padding-top: 0;
+				margin-bottom: 30px;
+				width: auto;
+			}
+		}
+
+		&_form {
+			flex-shrink: 1;
+			flex-grow: 1;
+		}
+	}
+}

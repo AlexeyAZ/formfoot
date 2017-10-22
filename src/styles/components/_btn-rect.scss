@@ -1,0 +1,22 @@
+.btn-rect {
+	transition: $trans;
+	border: 2px solid currentColor;
+	color: white;
+	text-decoration: none;
+	padding: 3px 30px;
+
+	&:hover {
+		color: $main-red;
+	}
+
+	&_m {
+		border-width: 1px;
+		font-size: 14px;
+		padding: 3px 20px;
+	}
+
+	&_l {
+		font-size: 18px;
+		padding: 3px 30px;
+	}
+}

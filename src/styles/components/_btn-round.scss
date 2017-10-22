@@ -1,0 +1,73 @@
+.btn-round {
+	border-radius: 50px;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+
+	&_l {
+		font-size: 20px;
+		font-weight: 600;
+		padding: 32px 65px;
+
+		@include media(w768) {
+			font-size: 15px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+
+	&_xl {
+		font-size: 25px;
+		padding: 30px 65px;
+
+		@include media(w768) {
+			font-size: 15px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+
+	&_red {
+		background-color: $main-red;
+		color: white;
+
+		&:hover {
+			animation: btnAnimRed 0.8s 0s ease-out 1;
+		}
+	}
+
+	&_white {
+		background-color: white;
+		color: black;
+
+		&:hover {
+			animation: btnAnimWhite 0.8s 0s ease-out 1;
+		}
+	}
+
+	@include media(w768) {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+	}
+}
+
+@keyframes btnAnimRed {
+    from {
+        box-shadow: 0 0 8px 6px $main-red, 0 0 12px 14px $main-red;
+    }
+    to {
+        box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 71px rgba(255, 48, 26, 0);
+    }
+}
+
+@keyframes btnAnimWhite {
+    from {
+        box-shadow: 0 0 8px 6px white, 0 0 12px 14px white;
+    }
+    to {
+        box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 71px rgba(255, 48, 26, 0);
+    }
+}

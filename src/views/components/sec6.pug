@@ -1,0 +1,23 @@
+- var sec6List = ["Бизнес-план", "Рекламные<br> материалы", "Готовый сайт" ,"Обучение вас<br> и ваших<br> специалистов", "Авторский<br> плантовизор", "Авторскую<br> методику<br> лечения"];
+
+section.sec.sec6
+    div.container
+        p.text_xxl.color-green.semibold.sec6__title.
+            Станьте владельцем востребованного и уникального<br>
+            кабинета под брендом «FormFoot»
+        p.text_s.sec6__subtitle.
+            С нашей франшизой вы получите сразу всё,<br> 
+            что потребуется для мощного и уверенного старта бизнеса:
+        div.sec6__list
+            each item, index in sec6List
+                div.sec6__list-item
+                    div(style="background-image:url(img/sec6-icon" + (index + 1) + ".png)").sec6__list-circle
+                    div.sec6__list-title.
+                        !{item}
+        div.sec6__note
+            p.text_s.semibold.
+                Какая бы проблема у вас не возникла в процессе открытия или после – мы поможем!<br> 
+                Опыт нашей команды – ваш главный козырь перед «кризисами»<br>
+                и потенциальными конкурентами!
+        +btn-round({size: "l", color: "red"}).js-small-btn.
+            Скачать PDF-презентацию, #{presentSize} Mb

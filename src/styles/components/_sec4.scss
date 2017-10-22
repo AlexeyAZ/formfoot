@@ -1,0 +1,20 @@
+.sec4 {
+	background-image: url("../img/sec4-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding: 4vw 0;
+
+	@include media(w768) {
+
+		br {
+			display: none;
+		}
+	}
+
+	&__title {
+		margin-bottom: 1.5em;
+	}
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>FormFoot</title>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
+    <div class="form-wrap form-wrap_small">
+      <div class="form-container" id="smallFormContainer">
+        <div class="form__close"></div>
+        <p class="form__heading">Оставьте заявку на презентацию франшизы</p>
+        <form class="form" id="smallForm" data-next="#bigForm">
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="">
+          <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
+          <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
+          <button class="btn-round_l btn-round_red btn-round form__btn js-big-btn">Скачать
+          </button>
+          <div class="form__security">
+            <input class="form__security-input" type="checkbox" id="sfs" checked required>
+            <label class="form__security-label" for="sfs"><span class="form__security-icon form__security-icon_invert"></span><span class="form__security-text">
+                Нажимая кнопку «Скачать» я даю согласие
+                на обработку персональных данных и соглашаюсь
+                с <a class="form__security-link form__security-link_invert" target="_blank" href="doc/politic.pdf">политикой конфиденциальности</a></span></label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="form-wrap form-wrap_big">
+      <div class="form-container" id="bigFormContainer">
+        <div class="form__close"></div>
+        <p class="form__title">Спасибо!</p>
+        <p class="form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
+        <form class="form" id="bigForm">
+          <input class="js-hidden-name" type="hidden" name="name1">
+          <input class="js-hidden-phone" type="hidden" name="phone1">
+          <input class="js-hidden-phone" type="hidden" name="email1">
+          <label class="form__label"><span>Введите Ваш город</span>
+            <input class="form__input" type="text" name="city" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Введите Ваш возраст</span>
+            <input class="form__input" type="text" name="age" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Наличие бизнеса / Опыт бизнеса</span>
+            <select class="form__select" name="business">
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+            </select>
+          </label>
+          <label class="form__label"><span>Объем планируемых инвестиций</span>
+            <select class="form__select" name="volume">
+              <option value="100 000 - 250 000">100 000 — 250 000 рублей</option>
+              <option value="250 000 - 500 000">250 000 — 500 000 рублей</option>
+              <option value="500 000 - 750 000">500 000 — 750 000 рублей</option>
+              <option value="750 000 - 1 000 000">750 000 — 1 000 000 рублей</option>
+              <option value="1 000 000 - 1 500 000">1 000 000 — 1 500 000 рублей</option>
+              <option value="1 500 000 - 3 000 000">1 500 000 — 3 000 000 рублей</option>
+              <option value="3 000 000">Более 3 000 000 рублей</option>
+            </select>
+          </label>
+          <button class="btn-round_l btn-round_red btn-round form__btn form__btn_big">Получить предложение
+          </button>
+        </form>
+      </div>
+    </div>
+    <section class="sec sec1">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__item header__item_descr">
+            <div>
+              Кабинет здоровья стоп с авторскими<br>
+              разработками в вашем городе<br>
+              уже через 5 недель
+            </div>
+          </div>
+          <div class="header__item header__item_logo"><a class="header__logo" href="/"><img class="header__logo-img" src="img/header-logo.png" alt=""></a></div>
+          <div class="header__item header__item_contacts"><a class="header__link phone phone_white" href="tel:88006005030" data-phone="88006005030">8 800 600 50 30</a><a class="btn-rect_l btn-rect js-small-btn" href="">Заказать звонок</a>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <h1 class="sec1__title">Помогайте людям<br> возвращать<br> здоровье НОГ</h1>
+        <p class="text_xl mb2">— изготавливайте индивидуальные ортопедические стельки<br> и зарабатывайте от <span class="bold">330 000 рублей</span> в месяц</p><a class="btn-round_l btn-round_red btn-round js-small-btn">Скачать PDF-презентацию, 23 Mb</a>
+      </div>
+    </section>
+    <section class="sec sec2">
+      <div class="container">
+        <p class="text_xxl color-green ta-center semibold">Каждый второй житель России<br> имеет проблему «плоской стопы»</p>
+        <div class="sec2__block">
+          <p class="text_l semibold">
+            Плоскостопие, а также другие
+            заболевания стоп влияют на общее
+            состояние организма. Это является
+            причиной боли в ногах, суставах,
+            тазу и позвоночнике
+          </p>
+          <p class="text_s">
+            Чтобы избавиться от боли,
+            необходимо ликвидировать её причину —
+            именно поэтому услуга изготовления
+            индивидуальных ортопедических стелек
+            становится популярнее с каждым годом
+          </p>
+          <p class="text_s">Такие стельки исправляют биомеханику и способствуют оздоровлению без хирургического вмешательства</p><img class="sec2__block-img" src="img/sec2-foots.jpg">
+        </div>
+      </div>
+    </section>
+    <section class="sec sec3">
+      <div class="container">
+        <p class="text_xxl color-green semibold mb1">«FormFoot» — сеть известных<br> в Сибири и Забайкалье кабинетов<br> оздоровления стоп</p>
+        <p class="text_l semibold mb1">Наша основная услуга — изготовление индивидуальных<br> ортопедических стелек</p>
+        <p class="text_s">Мы проводим диагностику стопы на авторском плантовизоре и используем<br> систему индивидуального ортезирования, чтобы создать стельки с гарантированным<br> оздоравливающим эффектом</p><img class="sec3__img" src="img/sec3-img.png">
+        <p class="text_s">Обладатели наших стелек избавляются от болевых синдромов<br> по всему телу в 98,1% случаев </p>
+      </div>
+    </section>
+    <section class="sec sec4">
+      <div class="container">
+        <p class="text_l semibold sec4__title">Мы буквально ставим на ноги людей,<br> которые перепробовали все способы борьбы<br> с болью в суставах, пояснице и ногах!</p><a class="btn-round_l btn-round_white btn-round js-small-btn">Скачать PDF-презентацию, 23 Mb</a>
+      </div>
+    </section>
+    <section class="sec sec5">
+      <div class="container">
+        <div class="sec5__info">
+          <div class="sec5__info-item sec5__info-item_left">
+            <div class="sec5__timeline semibold color-green"><img class="sec5__timeline-img" src="img/sec5-line.png">
+              <div class="sec5__timeline-item">7 лет<br> на рынке</div>
+              <div class="sec5__timeline-item">9 000 стелек<br> изготовили</div>
+              <div class="sec5__timeline-item">17 филиалов<br> в 8 городах</div>
+            </div>
+          </div>
+          <div class="sec5__info-item sec5__info-item_right">
+            <div class="sec5__info-text">
+              <p class="text_xxl semibold sec5__info-title">
+                Благодаря заметному
+                оздоравливающему эффекту,
+                стельки кабинетов «FormFoot»
+                стали популярны среди всех
+                слоёв населения
+              </p>
+              <p class="text_s">
+                Рекомендации людей позволяют нам практически<br>
+                не использовать активную рекламу и держать<br>
+                рентабельность услуг на уровне 40%
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sec5__note">
+          <div class="sec5__note-item sec5__note-item_icon">
+            <div class="sec5__note"></div>
+          </div>
+          <div class="sec5__note-item sec5__note-item_text">
+            <div class="sec5__note-text">
+              Бизнес-модель доказала свою эффективность,<br>
+              поэтому в 2017–2018 годах мы планируем открыть<br>
+              ещё 25 кабинетов по франшизе в РФ и СНГ
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec6">
+      <div class="container">
+        <p class="text_xxl color-green semibold sec6__title">
+          Станьте владельцем востребованного и уникального<br>
+          кабинета под брендом «FormFoot»
+        </p>
+        <p class="text_s sec6__subtitle">
+          С нашей франшизой вы получите сразу всё,<br>
+          что потребуется для мощного и уверенного старта бизнеса:
+        </p>
+        <div class="sec6__list">
+          <div class="sec6__list-item">
+            <div class="sec6__list-circle" style="background-image:url(img/sec6-icon1.png);"></div>
+            <div class="sec6__list-title">Бизнес-план</div>
+          </div>
+          <div class="sec6__list-item">
+            <div class="sec6__list-circle" style="background-image:url(img/sec6-icon2.png);"></div>
+            <div class="sec6__list-title">Рекламные<br> материалы</div>
+          </div>
+          <div class="sec6__list-item">
+            <div class="sec6__list-circle" style="background-image:url(img/sec6-icon3.png);"></div>
+            <div class="sec6__list-title">Готовый сайт</div>
+          </div>
+          <div class="sec6__list-item">
+            <div class="sec6__list-circle" style="background-image:url(img/sec6-icon4.png);"></div>
+            <div class="sec6__list-title">Обучение вас<br> и ваших<br> специалистов</div>
+          </div>
+          <div class="sec6__list-item">
+            <div class="sec6__list-circle" style="background-image:url(img/sec6-icon5.png);"></div>
+            <div class="sec6__list-title">Авторский<br> плантовизор</div>
+          </div>
+          <div class="sec6__list-item">
+            <div class="sec6__list-circle" style="background-image:url(img/sec6-icon6.png);"></div>
+            <div class="sec6__list-title">Авторскую<br> методику<br> лечения</div>
+          </div>
+        </div>
+        <div class="sec6__note">
+          <p class="text_s semibold">
+            Какая бы проблема у вас не возникла в процессе открытия или после — мы поможем!<br>
+            Опыт нашей команды — ваш главный козырь перед «кризисами»<br>
+            и потенциальными конкурентами!
+          </p>
+        </div><a class="btn-round_l btn-round_red btn-round js-small-btn">Скачать PDF-презентацию, 23 Mb</a>
+      </div>
+    </section>
+    <section class="sec sec7"><img class="sec7__bg" src="img/sec7-bg.png" alt="">
+      <div class="container">
+        <div class="sec7__content">
+          <p class="text_xxl semibold sec7__title">
+            Для начала сотрудничества
+            вам потребуется<br>
+            от 275 000 9 инвестиций
+          </p>
+          <div class="sec7__note"><img class="sec7__note-icon" src="img/sec7-icon.png">
+            <div class="text_s">
+              Средняя окупаемость вложений<br>
+              по статистике 17 филиалов: 2,5 месяца
+            </div>
+          </div><a class="sec7__link text_s" href="doc/fm.xlsx" download>Скачать подробную финансовую таблицу</a>
+        </div>
+      </div><img class="sec7__phone" src="img/sec7-phone.png" alt="">
+    </section>
+    <section class="sec sec8">
+      <div class="container">
+        <div class="sec8__content">
+          <div class="sec8__content-item sec8__content-item_text">
+            <h2 class="semibold">
+              Начните зарабатывать<br>
+              в свободной сфере<br>
+              при поддержке<br>
+              опытного наставника
+            </h2>
+            <p class="text_l">
+              Откройте кабинет оздоровления<br>
+              стоп в вашем городе и заработайте<br>
+              <span class="bold">3,6 млн рублей</span> уже через год
+            </p>
+          </div>
+          <div class="sec8__content-item sec8__content-item_form">
+            <div class="bottom-form-container" id="bottomFormContainer">
+              <p class="text_s ta-center semibold bottom-form__title">
+                Проверьте, есть ли ваш город<br>
+                в списке подходящих и свободных<br>
+                для открытия?
+              </p>
+              <form class="bottom-form" data-next="#bigForm" id="bottomForm">
+                <label class="bottom-form__label">
+                  <input class="input" type="text" name="city" placeholder="Ваш город" required>
+                </label>
+                <label class="bottom-form__label">
+                  <input class="input" type="email" name="email" placeholder="E-mail" required>
+                </label>
+                <label class="bottom-form__label">
+                  <input class="input" type="text" name="phone" placeholder="Телефон" required>
+                </label>
+                <button class="btn-round_xl btn-round_red btn-round bottom-form__btn">Проверить город
+                </button>
+                <div class="form__security">
+                  <input class="form__security-input" type="checkbox" id="bfs" checked required>
+                  <label class="form__security-label" for="bfs"><span class="form__security-icon"></span><span class="form__security-text">
+                      Нажимая кнопку «Проверить город» я даю согласие
+                      на обработку персональных данных и соглашаюсь
+                      с <a class="form__security-link" target="_blank" href="doc/politic.pdf">политикой конфиденциальности</a></span></label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__block footer__block_social">
+          <p class="footer__text footer__text_copy">© 2017, «FormFoot»</p>
+          <div class="footer__social">
+            <p class="footer__text footer__text_social-title">Узнать больше о нас:</p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="" target="_blank"><i class="fa fa-vk"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__block footer__block_contacts">
+          <p class="footer__text footer__text_adress">Отдел по развитию: г. Иркутск, ул. Байкальская 236в/1, оф. 1</p>
+          <div class="footer__contacts"><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a></div>
+        </div>
+        <div class="footer__block footer__block_feedback"><a class="footer__phone" href="tel:89218450907" data-phone="89218450907">+7 921 845-09-07</a><a class="btn-rect_m btn-rect js-small-btn" href="">Заказать звонок</a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/app.js"></script>
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.16.0/dev/polyfiller.js")-->
+  </body>
+</html>

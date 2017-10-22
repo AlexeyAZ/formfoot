@@ -1,0 +1,22 @@
+.sec3 {
+	background-color: $gray;
+	padding-bottom: 4vw;
+	text-align: center;
+
+	@include media(w768) {
+
+		br {
+			display: none;
+		}
+	}
+
+	&__img {
+		padding: 2vw 0 3.5vw;
+		max-width: 100%;
+
+		@include media(w768) {
+			padding: 4vw 0 5vw;
+			max-width: 80%;
+		}
+	}
+}

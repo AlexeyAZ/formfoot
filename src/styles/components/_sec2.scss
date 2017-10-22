@@ -1,0 +1,43 @@
+.sec2 {
+	background-color: $gray;
+	background-image: url("../img/sec2-logo.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 48vw;
+	padding-top: 3vw;
+	padding-bottom: 4vw;
+
+	@include media(w768) {
+		
+		br {
+			display: none;
+		}
+	}
+
+	&__block {
+		background-color: white;
+		padding: 75px 45% 40px 85px;
+		position: relative;
+		line-height: 1.35;
+
+		@include media(w1024) {
+			padding: 40px 45% 40px 40px;
+		}
+
+		@include media(w768) {
+			padding: 30px;
+		}
+	}
+
+	&__block-img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		max-height: 100%;
+		max-width: 45%;
+
+		@include media(w768) {
+			display: none;
+		}
+	}
+}

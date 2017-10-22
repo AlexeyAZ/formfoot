@@ -1,0 +1,8 @@
+mixin btn-round(options)
+	- if (options.type === "btn") {
+			button(class="btn-round_" + options.size + " " + "btn-round_" + options.color).btn-round&attributes(attributes)
+				block
+	- } else {
+			a(href=options.href class="btn-round_" + options.size + " " + "btn-round_" + options.color).btn-round&attributes(attributes)
+				block
+	- }
