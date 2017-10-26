@@ -17,4 +17,11 @@
 	&__title {
 		margin-bottom: 0.3em;
 	}
+
+	&__subtitle {
+
+		@include media(w768) {
+			margin-bottom: 10px;
+		}
+	}
 }

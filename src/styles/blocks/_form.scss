@@ -44,13 +44,13 @@ $form-security-icon-size-pc: 20px;
     opacity: 0;
     margin-top: 50px;
     margin-bottom: 30px;
-    padding: 50px 50px 60px;
+    padding: 50px 30px 60px;
     position: relative;
     width: 430px;
     z-index: 100;
 
     @include media(w1366) {
-        padding: 30px 40px 30px;
+        padding: 30px 30px 30px;
     }
 
     @include media(w768) {
@@ -130,7 +130,7 @@ $form-security-icon-size-pc: 20px;
         font-size: 14px;
         line-height: 1.4;
         text-align: left;
-        padding-left: 45px;
+        padding-left: 35px;
 
         @include media(w768) {
             font-size: 12px;
@@ -139,6 +139,7 @@ $form-security-icon-size-pc: 20px;
     }
 
     &__security-link {
+        display: inline;
         color: white;
         text-decoration: none;
 

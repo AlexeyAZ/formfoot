@@ -17,6 +17,25 @@ div.form-wrap.form-wrap_small
                         Нажимая кнопку «Скачать» я даю согласие 
                         на обработку персональных данных и соглашаюсь 
                         с <a class="form__security-link form__security-link_invert" target="_blank" href="doc/politic.pdf">политикой конфиденциальности</a>
+div.form-wrap.form-wrap_phone
+    div#phoneFormContainer.form-container
+        div.form__close
+        p.form__heading.
+            Заказать звонок
+        form#phoneForm.form(data-next="#bigForm")
+            input(type="text" name="name" placeholder="Ваше имя" required="").form__input
+            input(type="text" name="phone" placeholder="Ваш телефон" required="").form__input
+            input(type="email" name="email" placeholder="Ваш email" required="").form__input
+            +btn-round({size: "l", color: "red", type: "btn"}).form__btn.js-big-btn.
+                Заказать звонок
+            div.form__security
+                input(type="checkbox" id="sfs" checked required).form__security-input
+                label(for="sfs").form__security-label
+                    span.form__security-icon.form__security-icon_invert
+                    span.form__security-text.
+                        Нажимая кнопку «Заказать звонок» я даю согласие 
+                        на обработку персональных данных и соглашаюсь 
+                        с <a class="form__security-link form__security-link_invert" target="_blank" href="doc/politic.pdf">политикой конфиденциальности</a>
 div.form-wrap.form-wrap_big
     div#bigFormContainer.form-container
         div.form__close

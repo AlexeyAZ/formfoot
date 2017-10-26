@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
     <div class="form-wrap form-wrap_small">
       <div class="form-container" id="smallFormContainer">
         <div class="form__close"></div>
@@ -25,6 +24,26 @@
             <input class="form__security-input" type="checkbox" id="sfs" checked required>
             <label class="form__security-label" for="sfs"><span class="form__security-icon form__security-icon_invert"></span><span class="form__security-text">
                 Нажимая кнопку «Скачать» я даю согласие
+                на обработку персональных данных и соглашаюсь
+                с <a class="form__security-link form__security-link_invert" target="_blank" href="doc/politic.pdf">политикой конфиденциальности</a></span></label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="form-wrap form-wrap_phone">
+      <div class="form-container" id="phoneFormContainer">
+        <div class="form__close"></div>
+        <p class="form__heading">Заказать звонок</p>
+        <form class="form" id="phoneForm" data-next="#bigForm">
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="">
+          <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
+          <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
+          <button class="btn-round_l btn-round_red btn-round form__btn js-big-btn">Заказать звонок
+          </button>
+          <div class="form__security">
+            <input class="form__security-input" type="checkbox" id="sfs" checked required>
+            <label class="form__security-label" for="sfs"><span class="form__security-icon form__security-icon_invert"></span><span class="form__security-text">
+                Нажимая кнопку «Заказать звонок» я даю согласие
                 на обработку персональных данных и соглашаюсь
                 с <a class="form__security-link form__security-link_invert" target="_blank" href="doc/politic.pdf">политикой конфиденциальности</a></span></label>
           </div>
@@ -79,13 +98,13 @@
             </div>
           </div>
           <div class="header__item header__item_logo"><a class="header__logo" href="/"><img class="header__logo-img" src="img/header-logo.png" alt=""></a></div>
-          <div class="header__item header__item_contacts"><a class="header__link phone phone_white" href="tel:88006005030" data-phone="88006005030">8 800 600 50 30</a><a class="btn-rect_l btn-rect js-small-btn" href="">Заказать звонок</a>
+          <div class="header__item header__item_contacts"><a class="header__link phone phone_white" href="tel:89500500650" data-phone="+7 9 500 500 650">+7 950 050-06-50</a><a class="btn-rect_l btn-rect js-phone-btn" href="">Заказать звонок</a>
           </div>
         </div>
       </header>
       <div class="container">
         <h1 class="sec1__title">Помогайте людям<br> возвращать<br> здоровье НОГ</h1>
-        <p class="text_xl mb2">— изготавливайте индивидуальные ортопедические стельки<br> и зарабатывайте от <span class="bold">330 000 рублей</span> в месяц</p><a class="btn-round_l btn-round_red btn-round js-small-btn">Скачать PDF-презентацию, 23 Mb</a>
+        <p class="text_xl mb2 sec1__subtitle">— изготавливайте индивидуальные ортопедические стельки<br> и зарабатывайте от <span class="bold">330 000 рублей</span> в месяц</p><a class="btn-round_l btn-round_red btn-round js-small-btn">Скачать PDF-презентацию</a>
       </div>
     </section>
     <section class="sec sec2">
@@ -120,7 +139,7 @@
     </section>
     <section class="sec sec4">
       <div class="container">
-        <p class="text_l semibold sec4__title">Мы буквально ставим на ноги людей,<br> которые перепробовали все способы борьбы<br> с болью в суставах, пояснице и ногах!</p><a class="btn-round_l btn-round_white btn-round js-small-btn">Скачать PDF-презентацию, 23 Mb</a>
+        <p class="text_l semibold sec4__title">Мы буквально ставим на ноги людей,<br> которые перепробовали все способы борьбы<br> с болью в суставах, пояснице и ногах!</p><a class="btn-round_l btn-round_white btn-round js-small-btn">Скачать PDF-презентацию</a>
       </div>
     </section>
     <section class="sec sec5">
@@ -157,7 +176,7 @@
           <div class="sec5__note-item sec5__note-item_text">
             <div class="sec5__note-text">
               Бизнес-модель доказала свою эффективность,<br>
-              поэтому в 2017–2018 годах мы планируем открыть<br>
+              поэтому в <span class="nowrap">2017-2018</span> годах мы планируем открыть<br>
               ещё 25 кабинетов по франшизе в РФ и СНГ
             </div>
           </div>
@@ -206,7 +225,7 @@
             Опыт нашей команды — ваш главный козырь перед «кризисами»<br>
             и потенциальными конкурентами!
           </p>
-        </div><a class="btn-round_l btn-round_red btn-round js-small-btn">Скачать PDF-презентацию, 23 Mb</a>
+        </div><a class="btn-round_l btn-round_red btn-round js-small-btn">Скачать PDF-презентацию</a>
       </div>
     </section>
     <section class="sec sec7"><img class="sec7__bg" src="img/sec7-bg.png" alt="">
@@ -215,14 +234,14 @@
           <p class="text_xxl semibold sec7__title">
             Для начала сотрудничества
             вам потребуется<br>
-            от 275 000 9 инвестиций
+            от 275 000 <span class="text_rouble">9</span> инвестиций
           </p>
           <div class="sec7__note"><img class="sec7__note-icon" src="img/sec7-icon.png">
             <div class="text_s">
               Средняя окупаемость вложений<br>
               по статистике 17 филиалов: 2,5 месяца
             </div>
-          </div><a class="sec7__link text_s" href="doc/fm.xlsx" download>Скачать подробную финансовую таблицу</a>
+          </div><br><a class="sec7__link text_s js-small-btn" href="doc/fm.xlsx" download>Скачать подробную финансовую таблицу</a>
         </div>
       </div><img class="sec7__phone" src="img/sec7-phone.png" alt="">
     </section>
@@ -281,8 +300,7 @@
           <div class="footer__social">
             <p class="footer__text footer__text_social-title">Узнать больше о нас:</p>
             <ul class="footer__social-list">
-              <li class="footer__social-item"><a class="footer__link footer__link_social" href="" target="_blank"><i class="fa fa-vk"></i></a></li>
-              <li class="footer__social-item"><a class="footer__link footer__link_social" href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__link_social" href="https://vk.com/formfoot" target="_blank"><i class="fa fa-vk"></i></a></li>
             </ul>
           </div>
         </div>
@@ -290,12 +308,11 @@
           <p class="footer__text footer__text_adress">Отдел по развитию: г. Иркутск, ул. Байкальская 236в/1, оф. 1</p>
           <div class="footer__contacts"><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a></div>
         </div>
-        <div class="footer__block footer__block_feedback"><a class="footer__phone" href="tel:89218450907" data-phone="89218450907">+7 921 845-09-07</a><a class="btn-rect_m btn-rect js-small-btn" href="">Заказать звонок</a>
+        <div class="footer__block footer__block_feedback"><a class="footer__phone" href="tel:89500500650" data-phone="+7 9 500 500 650">+7 950 050-06-50</a><a class="btn-rect_m btn-rect js-phone-btn" href="">Заказать звонок</a>
         </div>
       </div>
     </footer>
     <script src="scripts/vendor.js"></script>
     <script src="scripts/app.js"></script>
-    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.16.0/dev/polyfiller.js")-->
   </body>
 </html>

@@ -1,11 +1,5 @@
 $(function () {
 
-    if ($('input[type="range"]').length) {
-        $('input[type="range"]').rangeslider({
-            polyfill: false
-        });
-    }
-
     webshim.setOptions('forms', {
         lazyCustomMessages: true,
         replaceValidationUI: true
@@ -18,11 +12,11 @@ $(function () {
 
         if (md.mobile()) {
             phoneLink.attr("href", "tel:" + $(".phone-link").data("phone"));
-            phoneLink.removeClass("js-small-btn");
+            phoneLink.removeClass("js-phone-btn");
             console.log("mobile");
         } else {
             phoneLink.attr("href", "");
-            phoneLink.addClass("js-small-btn");
+            phoneLink.addClass("js-phone-btn");
             console.log("pc");
         }
     }
@@ -43,6 +37,15 @@ $(function () {
         if (!$(".thanks").length) {
             $("html").addClass("form-open");
             $(".form-wrap_small").addClass("form-wrap_open");
+        }
+    });
+
+    body.on("click", ".js-phone-btn", function (e) {
+        e.preventDefault();
+
+        if (!$(".thanks").length) {
+            $("html").addClass("form-open");
+            $(".form-wrap_phone").addClass("form-wrap_open");
         }
     });
 
@@ -92,7 +95,7 @@ $(function () {
             }
         };
     } else {
-        $("#smallForm, #bottomForm").submit(function (e) {
+        $("#phoneForm, #smallForm, #bottomForm").submit(function (e) {
             e.preventDefault();
             $(".form-wrap_open").removeClass("form-wrap_open");
 

@@ -17,6 +17,12 @@
   font-weight: 600;
   font-style: normal; }
 
+@font-face {
+  font-family: "PTRouble";
+  src: url("../fonts/PTRouble/PTRoubleSans.woff2") format("woff2"), url("../fonts/PTRouble/PTRoubleSans.ttf") format("ttf"), url("../fonts/PTRouble/PTRoubleSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .ta-center {
   text-align: center; }
 
@@ -34,6 +40,9 @@
 
 .semibold {
   font-weight: 600; }
+
+.nowrap {
+  white-space: nowrap; }
 
 .mb0 {
   margin-bottom: 0; }
@@ -58,9 +67,12 @@ h1 {
   @media only screen and (max-width: 768px) {
     h1 {
       font-size: 30px; } }
+  @media only screen and (max-width: 500px) {
+    h1 {
+      font-size: 25px; } }
 
 h2 {
-  font-size: 55px; }
+  font-size: 52px; }
   @media only screen and (max-width: 1280px) {
     h2 {
       font-size: 40px; } }
@@ -115,6 +127,9 @@ h2 {
   @media only screen and (max-width: 768px) {
     .text_xxl {
       font-size: 25px; } }
+
+.text_rouble {
+  font-family: "PTRouble"; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2576,13 +2591,13 @@ body {
   opacity: 0;
   margin-top: 50px;
   margin-bottom: 30px;
-  padding: 50px 50px 60px;
+  padding: 50px 30px 60px;
   position: relative;
   width: 430px;
   z-index: 100; }
   @media only screen and (max-width: 1366px) {
     .form-container {
-      padding: 30px 40px 30px; } }
+      padding: 30px 30px 30px; } }
   @media only screen and (max-width: 768px) {
     .form-container {
       padding: 20px 20px 10px;
@@ -2642,13 +2657,14 @@ body {
   font-size: 14px;
   line-height: 1.4;
   text-align: left;
-  padding-left: 45px; }
+  padding-left: 35px; }
   @media only screen and (max-width: 768px) {
     .form__security-text {
       font-size: 12px;
       padding-left: 35px; } }
 
 .form__security-link {
+  display: inline;
   color: white;
   text-decoration: none; }
   .form__security-link_invert {
@@ -3005,7 +3021,8 @@ a {
       padding-top: 20px; } }
   @media only screen and (max-width: 768px) {
     .header {
-      text-align: center; } }
+      text-align: center;
+      margin-bottom: 10px; } }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3029,13 +3046,17 @@ a {
   .header__logo-img {
     -webkit-transform: translateY(20px);
         -ms-transform: translateY(20px);
-            transform: translateY(20px); }
+            transform: translateY(20px);
+    display: block; }
     @media only screen and (max-width: 1024px) {
       .header__logo-img {
         -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
                 transform: translateY(0);
         width: 200px; } }
+    @media only screen and (max-width: 768px) {
+      .header__logo-img {
+        width: 150px; } }
   .header__item {
     width: calc(100% / 3); }
     .header__item_logo {
@@ -3058,7 +3079,7 @@ a {
                   align-items: center; } }
     @media only screen and (max-width: 768px) {
       .header__item {
-        margin-bottom: 15px;
+        margin-bottom: 7px;
         width: auto; } }
     @media only screen and (max-width: 768px) {
       .header__item_descr {
@@ -3251,6 +3272,9 @@ a {
       display: none; } }
   .sec1__title {
     margin-bottom: 0.3em; }
+  @media only screen and (max-width: 768px) {
+    .sec1__subtitle {
+      margin-bottom: 10px; } }
 
 .sec2 {
   background-color: #e7e7e7;
@@ -3515,6 +3539,9 @@ a {
   @media only screen and (max-width: 1024px) {
     .sec7 {
       padding-bottom: 4vw; } }
+  @media only screen and (max-width: 768px) {
+    .sec7 {
+      text-align: center; } }
   .sec7__bg {
     opacity: 0.5;
     position: absolute;
@@ -3560,6 +3587,15 @@ a {
       left: 0;
       height: 3px;
       width: 160px; }
+    @media only screen and (max-width: 768px) {
+      .sec7__title {
+        text-align: center;
+        padding-bottom: 20px; }
+        .sec7__title:before {
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%);
+          left: 50%; } }
   .sec7__note {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3571,6 +3607,10 @@ a {
     margin-bottom: 5.5vw; }
     @media only screen and (max-width: 768px) {
       .sec7__note {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        text-align: left;
         margin-bottom: 10px; } }
   .sec7__note-icon {
     margin-right: 22px; }
@@ -3608,7 +3648,7 @@ a {
   .sec8__content-item_text {
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    padding-top: 6vw;
+    padding-top: 56px;
     width: 54%; }
     @media only screen and (max-width: 1024px) {
       .sec8__content-item_text {

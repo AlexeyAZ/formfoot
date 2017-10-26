@@ -1,5 +1,5 @@
 <?php
-$sendto = "teos.nl@gmail.com";
+$sendto = "";
 $city = nl2br($_POST['city']);
 $age = nl2br($_POST['age']);
 $business = nl2br($_POST['business']);
